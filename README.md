@@ -16,7 +16,7 @@ This project predicts whether a telecom customer will churn (leave the service) 
 
 ## Technologies Used
 
-- Python 🐍
+- Python 
 - Pandas, NumPy for data manipulation
 - Seaborn, Matplotlib for visualization
 - Scikit-learn for ML models
