@@ -9,7 +9,7 @@ A machine learning solution to predict if a customer is likely to churn based on
 - Streamlit
 - Docker
   
-<details> <summary><strong>📁 Project Directory Structure</strong></summary>
+## 📁 Project Directory Structure
 ```bash
 Customer-Churn-Prediction/
 ├── data/                  # Raw and processed datasets
@@ -33,7 +33,6 @@ Customer-Churn-Prediction/
 ├── README.md              # Project overview and instructions
 └── requirements.txt       # Python dependencies
 ```
-</details>
 
 ## 📊 Data Source
 
