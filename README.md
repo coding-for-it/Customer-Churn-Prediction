@@ -30,8 +30,17 @@ Customer-Churn-Prediction-main/
 - Precision, Recall, F1-Score
 - ROC-AUC Curve
 
+<<<<<<< HEAD
 ## 🖥 Deployment
 Run the app locally:
+=======
+- Python 
+- Pandas, NumPy for data manipulation
+- Seaborn, Matplotlib for visualization
+- Scikit-learn for ML models
+- Streamlit for frontend UI
+- Docker for containerized deployment
+>>>>>>> 1c4dc39e972817fd9fba49c9adda77efc02d634a
 
 ```bash
 streamlit run app.py
