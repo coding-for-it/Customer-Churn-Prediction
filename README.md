@@ -9,46 +9,71 @@ A machine learning solution to predict if a customer is likely to churn based on
 - Streamlit
 - Docker
 
-## 📁 Project Structure
-Customer-Churn-Prediction-main/
+## 📁 Project StructureCustomer-Churn-Prediction/
 │
-├── churn_pipeline.ipynb # EDA + model training
-├── app.py # Streamlit app
-├── customer_churn.csv # Dataset
-├── logistic_model.pkl # Saved model
-├── requirements.txt # Python dependencies
-├── Dockerfile # Containerization
-└── README.md # Project overview
+├── data/ # Raw and processed datasets
+│ └── customer_churn.csv
+│
+├── notebooks/ # Jupyter notebooks for EDA and model pipeline
+│ └── churn_pipeline.ipynb
+│
+├── backend/ # Model and utility scripts
+│ ├── model_utils.py
+│ └── init.py
+│
+├── database/ # MySQL integration
+│ ├── mysql_utils.py
+│ └── mysql_setup.sql
+│
+├── frontend/ # Streamlit web app
+│ └── app.py
+│
+├── .gitignore
+├── README.md
+└── requirements.txt
 
 
-## 🧪 Models Used
-- Logistic Regression
-- Random Forest
+---
 
-## 🎯 Evaluation Metrics
-- Accuracy
-- Precision, Recall, F1-Score
-- ROC-AUC Curve
+## 📊 Data Source
 
-<<<<<<< HEAD
-## 🖥 Deployment
-Run the app locally:
-=======
-- Python 
-- Pandas, NumPy for data manipulation
-- Seaborn, Matplotlib for visualization
-- Scikit-learn for ML models
-- Streamlit for frontend UI
-- Docker for containerized deployment
->>>>>>> 1c4dc39e972817fd9fba49c9adda77efc02d634a
+The dataset contains features like:
 
+- Customer tenure
+- Contract type
+- Monthly charges
+- Total charges
+- Internet service
+- Payment method
+- Gender, Senior citizen, etc.
+
+---
+
+## 🧠 Model Details
+
+- **Model Used**: Random Forest Classifier
+- **Why Random Forest**: Handles both numerical and categorical features well, reduces overfitting, and provides feature importance for interpretability.
+- **Evaluation Metrics**: Accuracy, Precision, Recall, F1-score, Confusion Matrix.
+
+---
+
+## 🧪 How to Run Locally
+
+### 1. Clone the Repository
 ```bash
-streamlit run app.py
+git clone https://github.com/coding-for-it/Customer-Churn-Prediction.git
+cd Customer-Churn-Prediction
 ```
-
-Or build the Docker container:
-
+2. Create Virtual Environment
 ```bash
-docker build -t churn-app .
-docker run -p 8501:8501 churn-app
+python -m venv venv
+venv\Scripts\activate  # On Windows
+```
+3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+4. Run the App
+```bash
+streamlit run frontend/app.py
 ```
