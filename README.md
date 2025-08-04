@@ -1,25 +1,45 @@
-# Customer Churn Prediction using Machine Learning
+# 📉 Customer Churn Prediction
 
-This project predicts whether a telecom customer will churn (leave the service) or stay, based on their service usage patterns and contract details. It is beginner-friendly and demonstrates a full ML workflow with deployment using **Streamlit** and **Docker**.
+A machine learning solution to predict if a customer is likely to churn based on behavior and account features.
 
-## Project Highlights
+## 🚀 Tech Stack
+- Python
+- Pandas, NumPy, Scikit-learn
+- Matplotlib, Seaborn
+- Streamlit
+- Docker
 
-- Real-world customer churn dataset
-- Cleaned, preprocessed, and encoded data
-- Built and compared two models: **Logistic Regression** and **Random Forest**
-- Simple and interactive **Streamlit web app**
-- **Dockerized** for easy deployment
+## 📁 Project Structure
+Customer-Churn-Prediction-main/
+│
+├── churn_pipeline.ipynb # EDA + model training
+├── app.py # Streamlit app
+├── customer_churn.csv # Dataset
+├── logistic_model.pkl # Saved model
+├── requirements.txt # Python dependencies
+├── Dockerfile # Containerization
+└── README.md # Project overview
 
-## What is Customer Churn?
 
-**Customer churn** is when users stop using a service. Predicting churn helps companies take action in time to retain those users. In this project, we analyze features like tenure, monthly charges, gender, contract type, and internet service to predict churn.
+## 🧪 Models Used
+- Logistic Regression
+- Random Forest
 
-## Technologies Used
+## 🎯 Evaluation Metrics
+- Accuracy
+- Precision, Recall, F1-Score
+- ROC-AUC Curve
 
-- Python 🐍
-- Pandas, NumPy for data manipulation
-- Seaborn, Matplotlib for visualization
-- Scikit-learn for ML models
-- Streamlit for frontend UI
-- Docker for containerized deployment
+## 🖥 Deployment
+Run the app locally:
 
+```bash
+streamlit run app.py
+```
+
+Or build the Docker container:
+
+```bash
+docker build -t churn-app .
+docker run -p 8501:8501 churn-app
+```
