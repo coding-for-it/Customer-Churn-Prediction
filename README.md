@@ -8,32 +8,32 @@ A machine learning solution to predict if a customer is likely to churn based on
 - Matplotlib, Seaborn
 - Streamlit
 - Docker
-
-## 📁 Project StructureCustomer-Churn-Prediction/
+  
+<details> <summary><strong>📁 Project Directory Structure</strong></summary>
+```bash
+Customer-Churn-Prediction/
+├── data/                  # Raw and processed datasets
+│   └── customer_churn.csv
 │
-├── data/ # Raw and processed datasets
-│ └── customer_churn.csv
+├── notebooks/             # Jupyter notebooks for EDA and model pipeline
+│   └── churn_pipeline.ipynb
 │
-├── notebooks/ # Jupyter notebooks for EDA and model pipeline
-│ └── churn_pipeline.ipynb
+├── backend/               # Model and utility scripts
+│   ├── model_utils.py
+│   └── __init__.py
 │
-├── backend/ # Model and utility scripts
-│ ├── model_utils.py
-│ └── init.py
+├── database/              # MySQL integration
+│   ├── mysql_utils.py
+│   └── mysql_setup.sql
 │
-├── database/ # MySQL integration
-│ ├── mysql_utils.py
-│ └── mysql_setup.sql
+├── frontend/              # Streamlit web app
+│   └── app.py
 │
-├── frontend/ # Streamlit web app
-│ └── app.py
-│
-├── .gitignore
-├── README.md
-└── requirements.txt
-
-
----
+├── .gitignore             # Ignore unnecessary files and folders
+├── README.md              # Project overview and instructions
+└── requirements.txt       # Python dependencies
+```
+</details>
 
 ## 📊 Data Source
 
