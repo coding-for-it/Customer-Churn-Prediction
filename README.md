@@ -76,3 +76,7 @@ pip install -r requirements.txt
 ```bash
 streamlit run frontend/app.py
 ```
+5. Run the FastAPI server
+```bash
+uvicorn backend.api.fastapi_app:app --reload
+```
