@@ -58,7 +58,7 @@ The dataset contains features like:
 
 ## 🧪 How to Run Locally
 
-### 1. Clone the Repository
+1. Clone the Repository
 ```bash
 git clone https://github.com/coding-for-it/Customer-Churn-Prediction.git
 cd Customer-Churn-Prediction
